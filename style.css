@@ -22,21 +22,21 @@ h1, h2, h3, p, label, input, a{
 body {
     width: 485px;
     margin: 0 auto;
-    background-color: var(--white);
+    background-color: var(--black);
 }
 
-main {
+main {  
     padding: 10px;
     margin: 0px;
+    background-color: var(--white);
 }
 
 h1 {
     text-align: center;
     margin: 0px;
-    padding: 0px;
     color: var(--teal);
     text-transform: uppercase;
-    font-weight: bold;
+    background-color: var(--white);
 }
 
 h2 {
@@ -59,10 +59,14 @@ nav li a {
     padding: 10px;
 }
 
-[href="#home"] {
+li:last-child {
     position: absolute;
-    bottom: 20px;
+    top: 5760px;
     right: 10px;
+    color: var(--white);    
+    text-transform: uppercase;
+    border: var(--white) 2px solid;
+    border-radius: 10px;
 }
 
 a {
@@ -87,7 +91,8 @@ h2 {
 .image-item p {
     position: relative;
     text-align: center;
-    top: -40px;
+    top: -260px;
+    color: var(--white);
     text-transform: uppercase;
     margin: 0px;
     padding: 0px;
@@ -96,7 +101,6 @@ h2 {
 #contact {
     background-color: var(--black);
     padding: 0 30px 30px 30px;
-
 }
 
 #contact h2, #contact p, #contact label {
@@ -163,6 +167,46 @@ footer p {
     text-transform: uppercase;
 }
 
+small{
+    font-size: 1rem;
+}
+
+.image-item:nth-child(1) p, .image-item:nth-child(3) p {
+    color: var(--white);
+    position: relative;
+    top: -40px;
+}
+
+.image-item:nth-child(4) p, .image-item:nth-child(5) p {
+    color: var(--black);
+    position: relative;
+    top: -610px;
+}
+
+
+.image-item:nth-child(6) p {
+    color: var(--black);
+    position: relative;
+    top: -40px;
+}
+
+.image-item:nth-child(7) p {
+    color: var(--white);
+    position: relative;
+    top: -40px;
+}
+
+.image-item:nth-child(8) p, .image-item:nth-child(9) p, .image-item:nth-child(10) p {
+    color: var(--black);
+}
+
+.image-item:nth-child(11) p {
+    color: var(--black);
+    position: relative;
+    top: -260px;
+}
+
+
 
 @media screen and (min-width:880px) {
     body {
@@ -171,21 +215,37 @@ footer p {
 
     h1 {
         text-align: left;
+        padding-left: 20px;
     }
 
     #gallery-items {
         display: grid;
-        grid-template-columns: auto auto;
+        grid-template-columns: 1fr 1fr;
     }
 
     input[type=submit] {
         width: 500px;
+    }
+
+    li:last-child {
+        position: absolute;
+        top: 3475px;
+        right: 10px;
+        color: var(--white);    
+        text-transform: uppercase;
+        border: var(--white) 2px solid;
+        border-radius: 10px;
+    }
+
+    #contact {
+        padding: 0 80px 20px 80px;
     }
 }
 
 @media screen and (min-width:1300px) {
     body {
         width: 1300px;
+        padding-left: 20px;
     }
 
     h1 {
@@ -203,5 +263,19 @@ footer p {
 
     input[type=submit] {
         width: 700px;
+    }
+
+    li:last-child {
+        position: absolute;
+        top: 2510px;
+        right: 10px;
+        color: var(--white);    
+        text-transform: uppercase;
+        border: var(--white) 2px solid;
+        border-radius: 10px;
+    }
+
+    #contact {
+        padding: 0 130px 20px 130px;
     }
 }
