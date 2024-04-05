@@ -22,85 +22,91 @@
         </ul>
     </nav>
 
-    <section id="about">
-        <h2>About</h2>
-        <p>Hello!</p>
-        <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is
-            my speciality and it's taken me all over the world.</p>
-    </section>
+    <main>
 
-    <section id="gallery">
-        <h2>Gallery</h2>
-        <p>Here are some highlights of my work. The locations and year are in the caption.</p>
-        <section>
-            <div class="image-item">
-                <img src="images/Chile.png" alt="seashore">
-                <p>Chile, 2001</p>
-            </div>
 
-            <div class="image-item">
-                <img src="images/Guatemala.png" alt="">
-                <p>Guatemala, 1997</p>
-            </div>
 
-            <div class="image-item">
-                <img src="images/Hawaii.png" alt="">
-                <p>Hawaii, 2010</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Iran.png" alt="">
-                <p>Iran, 1999</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Ireland.png" alt="">
-                <p>Ireland, 2012</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Italy.png" alt="">
-                <p>Italy, 2015</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Moab-Desert.png" alt="">
-                <p>Moab Desert, 2020</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Rocky-Mountains.png" alt="">
-                <p>Rocky Mountains, 2009</p>
-            </div>
-
-            <div class="image-item">
-                <img src="images/Switzerland.png" alt="">
-                <p>Switzerland, 2014</p>
-            </div>
-
-            <div class="images/image-item">
-                <img src="UK.png" alt="">
-                <p>UK, 2005</p>
-            </div>
-
-            <div class="images/image-item">
-                <img src="USA.png" alt="">
-                <p>USA, 2021</p>
-            </div>
-
-            <div class="images/image-item">
-                <img src="Wyoming.png" alt="">
-                <p>Wyoming, 2021</p>
-            </div>
+        <section id="about">
+            <h2>About</h2>
+            <p>Hello!</p>
+            <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape
+                photography is
+                my speciality and it's taken me all over the world.</p>
         </section>
-    </section>
 
+        <section id="gallery">
+            <h2>Gallery</h2>
+            <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+            <section id="gallery-items">
+                <div class="image-item">
+                    <img src="images/Chile.png" alt="seashore">
+                    <p>Chile, 2001</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Guatemala.png" alt="">
+                    <p>Guatemala, 1997</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Hawaii.png" alt="">
+                    <p>Hawaii, 2010</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Iran.png" alt="">
+                    <p>Iran, 1999</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Ireland.png" alt="">
+                    <p>Ireland, 2012</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Italy.png" alt="">
+                    <p>Italy, 2015</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Moab-Desert.png" alt="">
+                    <p>Moab Desert, 2020</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Rocky-Mountains.png" alt="">
+                    <p>Rocky Mountains, 2009</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Switzerland.png" alt="">
+                    <p>Switzerland, 2014</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/UK.png" alt="">
+                    <p>UK, 2005</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/USA.png" alt="">
+                    <p>USA, 2021</p>
+                </div>
+
+                <div class="image-item">
+                    <img src="images/Wyoming.png" alt="">
+                    <p>Wyoming, 2021</p>
+                </div>
+            </section>
+        </section>
+  
+    </main>
 
     <section id="contact">
         <h2>Contact</h2>
         <p>Please fill out this form and I'll connect with you soon.</p>
 
-        <div class="container">
+        <div>
             <form action="#" name="Your contact information">
                 <label for="name">Name</label>
                 <input type="text" name="name" id="name" placeholder="Your full name">
@@ -109,9 +115,11 @@
                 <input type="email" name="email" id="email" placeholder="Enter your email address">
 
                 <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="What can I help you with">
+                <input type="text" name="message" id="message" placeholder="What can I help you with?">
 
-                <input type="submit" value="Submit">
+                <div class="container">
+                    <input type="submit" id="submit" value="Submit">
+                </div>
             </form>
         </div>
     </section>

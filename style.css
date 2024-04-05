@@ -2,4 +2,206 @@
     --teal: #007d7b;
     --black: #000000;
     --white: #ffffff;
+    --font-family: Arial, Helvetica, sans-serif;
+}
+
+p {font-size: 1.25em;}
+figcaption, label, input, small {font-size: 1em;}
+nav a {font-size: 1.5em;}
+h1 {font-size: 3em;}
+h2 {font-size: 2em;}
+
+/*  */
+html {
+    background-color: var(--black);
+}
+h1, h2, h3, p, label, input, a{
+    font-family: var(--font-family);
+}
+
+body {
+    width: 485px;
+    margin: 0 auto;
+    background-color: var(--white);
+}
+
+main {
+    padding: 10px;
+    margin: 0px;
+}
+
+h1 {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    color: var(--teal);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+h2 {
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    background-color: var(--black);
+    justify-content: center;
+}
+
+nav li {
+    display: inline-block;
+}
+
+nav li a {
+    display: block;
+    text-transform: uppercase;
+    padding: 10px;
+}
+
+[href="#home"] {
+    position: absolute;
+    bottom: 20px;
+    right: 10px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+h2 {
+    text-transform: uppercase;
+}
+
+#gallery-items {
+    display: grid;
+    grid-template-rows: repeat(12, auto);
+    margin: 0 auto;
+}
+
+.image-item {
+    margin: 0 auto;
+}
+
+.image-item p {
+    position: relative;
+    text-align: center;
+    top: -40px;
+    text-transform: uppercase;
+    margin: 0px;
+    padding: 0px;
+}
+
+#contact {
+    background-color: var(--black);
+    padding: 0 30px 30px 30px;
+
+}
+
+#contact h2, #contact p, #contact label {
+    padding-top: 20px;
+    margin: 0 0 20px 0;
+    color: var(--white)
+}
+
+
+
+input[type=text], input[type=email]{
+    width: 100%;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    padding: 10px;
+}
+
+
+
+input::placeholder {
+    color: var(--teal);
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.container {
+    text-align: center;
+}
+
+input[type=submit] {
+    width: 250px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: var(--teal);
+}
+
+#submit {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: var(--white);
+    border: var(--teal) 2px;
+}
+
+#contact p {
+    text-align: center;
+}
+
+label {
+    width: 100%;
+    padding-left: 10px; 
+    text-transform: uppercase;
+}
+
+footer {
+    background-color: var(--black);
+    padding-top: 30px;
+    margin-bottom: 20px;
+}
+
+footer p {
+    color: var(--white);
+    margin: 0px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+
+@media screen and (min-width:880px) {
+    body {
+        width: 880px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    #gallery-items {
+        display: grid;
+        grid-template-columns: auto auto;
+    }
+
+    input[type=submit] {
+        width: 500px;
+    }
+}
+
+@media screen and (min-width:1300px) {
+    body {
+        width: 1300px;
+    }
+
+    h1 {
+        text-align: left;
+    }
+
+    nav {
+        justify-content: right;
+    }
+
+    #gallery-items {
+        display: grid;
+        grid-template-columns: auto auto auto;
+    }
+
+    input[type=submit] {
+        width: 700px;
+    }
 }
