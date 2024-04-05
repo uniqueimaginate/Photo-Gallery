@@ -74,6 +74,12 @@ a {
     color: var(--white);
 }
 
+a:hover {
+    background-color: var(--white);
+    color: var(--black);
+    border-radius: 10px;
+}
+
 h2 {
     text-transform: uppercase;
 }
@@ -137,11 +143,17 @@ input[type=submit] {
     background-color: var(--teal);
 }
 
+
 #submit {
     text-transform: uppercase;
     font-weight: bold;
     color: var(--white);
-    border: var(--teal) 2px;
+    border: none;
+}
+
+#submit:hover {
+    background-color: var(--white);
+    color: var(--teal);
 }
 
 #contact p {
