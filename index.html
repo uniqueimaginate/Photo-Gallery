@@ -4,67 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>TK Photography</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    TK Photography
-About
-Gallery
-Contact
-top
-About
-Hello! 
-I’m TK and I’m a photographer. I love looking at life through the lens of my camera. Landscape photography is my speciality and it’s taken me all over the world. 
-Gallery
-Here are some highlights of my work. The locations and year are in the caption. 
+    <header>
+        <h1>TK Photography</h1>
+    </header>
 
-Chile.png
-Chile, 2001
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#gallery">Gallery</a></li>
+            <li><a href="#contact">Contact</a></li>
+            <li><a href="#home">Top</a></li>
+        </ul>
+    </nav>
 
-Guatemala.png
-Guatemala, 1997
+    <section id="about">
+        <h2>About</h2>
+        <p>Hello!</p>
+        <p>I'm TK and I'm a photographer. I love looking at life through the lens of my camera. Landscape photography is
+            my speciality and it's taken me all over the world.</p>
+    </section>
 
-Hawaii.png
-Hawaii, 2010
+    <section id="gallery">
+        <h2>Gallery</h2>
+        <p>Here are some highlights of my work. The locations and year are in the caption.</p>
+        <section>
+            <div class="image-item">
+                <img src="images/Chile.png" alt="seashore">
+                <p>Chile, 2001</p>
+            </div>
 
-Iran.png
-Iran, 1999
+            <div class="image-item">
+                <img src="images/Guatemala.png" alt="">
+                <p>Guatemala, 1997</p>
+            </div>
 
-Ireland.png
-Ireland, 2012
+            <div class="image-item">
+                <img src="images/Hawaii.png" alt="">
+                <p>Hawaii, 2010</p>
+            </div>
 
-Italy.png
-Italy, 2015
+            <div class="image-item">
+                <img src="images/Iran.png" alt="">
+                <p>Iran, 1999</p>
+            </div>
 
-Moab-Desert.png
-Moab Desert, 2020
+            <div class="image-item">
+                <img src="images/Ireland.png" alt="">
+                <p>Ireland, 2012</p>
+            </div>
 
-Rocky-Mountains.png
-Rocky Mountains, 2009
+            <div class="image-item">
+                <img src="images/Italy.png" alt="">
+                <p>Italy, 2015</p>
+            </div>
 
-Switzerland.png
-Switzerland, 2014
+            <div class="image-item">
+                <img src="images/Moab-Desert.png" alt="">
+                <p>Moab Desert, 2020</p>
+            </div>
 
-UK.png
-UK, 2005
+            <div class="image-item">
+                <img src="images/Rocky-Mountains.png" alt="">
+                <p>Rocky Mountains, 2009</p>
+            </div>
 
-USA.png
-USA, 2021
+            <div class="image-item">
+                <img src="images/Switzerland.png" alt="">
+                <p>Switzerland, 2014</p>
+            </div>
 
-Wyoming.png
-Wyoming, 2021
-Contact
-Please fill out this form and I’ll connect with you soon.
+            <div class="images/image-item">
+                <img src="UK.png" alt="">
+                <p>UK, 2005</p>
+            </div>
 
-Your contact information
-Name (Your full name)
-Email (Enter your email address)
-Message (What can I help you with?)
-Submit
+            <div class="images/image-item">
+                <img src="USA.png" alt="">
+                <p>USA, 2021</p>
+            </div>
 
-Copyright 2021 TK Photography
+            <div class="images/image-item">
+                <img src="Wyoming.png" alt="">
+                <p>Wyoming, 2021</p>
+            </div>
+        </section>
+    </section>
+
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Please fill out this form and I'll connect with you soon.</p>
+
+        <div class="container">
+            <form action="#" name="Your contact information">
+                <label for="name">Name</label>
+                <input type="text" name="name" id="name" placeholder="Your full name">
+
+                <label for="email">Email</label>
+                <input type="email" name="email" id="email" placeholder="Enter your email address">
+
+                <label for="message">Message</label>
+                <input type="text" name="message" id="message" placeholder="What can I help you with">
+
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </section>
+
+    <footer>
+        <p><small>Copyright 2021 TK Photography</small></p>
+    </footer>
 
 </body>
 
