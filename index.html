@@ -14,6 +14,7 @@
     </header>
 
     <nav>
+        <h2>Main Navigation</h2>
         <ul>
             <li><a href="#about">About</a></li>
             <li><a href="#gallery">Gallery</a></li>
@@ -38,65 +39,65 @@
             <h2>Gallery</h2>
             <p>Here are some highlights of my work. The locations and year are in the caption.</p>
             <div id="gallery-items">
-                <div class="image-item">
+                <figure>
                     <img src="images/Chile.png" alt="seashore">
-                    <p class="white">Chile, 2001</p>
-                </div>
+                    <figcaption class="white down">Chile, 2001</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Guatemala.png" alt="ocean flowers sky mountain">
-                    <p class="white-up">Guatemala, 1997</p>
-                </div>
+                    <figcaption class="white up">Guatemala, 1997</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Hawaii.png" alt="ocean mountain sky">
-                    <p class="white">Hawaii, 2010</p>
-                </div>
+                    <figcaption class="white down">Hawaii, 2010</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Iran.png" alt="red plants sand mountain">
-                    <p>Iran, 1999</p>
-                </div>
+                    <figcaption class="up-high">Iran, 1999</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Ireland.png" alt="green mountain grass">
-                    <p>Ireland, 2012</p>
-                </div>
+                    <figcaption class="up-high">Ireland, 2012</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Italy.png" alt="mountain snow lake">
-                    <p>Italy, 2015</p>
-                </div>
+                    <figcaption class="down">Italy, 2015</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Moab-Desert.png" alt="desert rocks sunset">
-                    <p class="white">Moab Desert, 2020</p>
-                </div>
+                    <figcaption class="white down">Moab Desert, 2020</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Rocky-Mountains.png" alt="rocky mountains">
-                    <p>Rocky Mountains, 2009</p>
-                </div>
+                    <figcaption class="up">Rocky Mountains, 2009</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Switzerland.png" alt="mountain snow">
-                    <p>Switzerland, 2014</p>
-                </div>
+                    <figcaption class="up">Switzerland, 2014</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/UK.png" alt="mountains snow sky">
-                    <p>UK, 2005</p>
-                </div>
+                    <figcaption class="up">UK, 2005</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/USA.png" alt="sky grass flowers">
-                    <p>USA, 2021</p>
-                </div>
+                    <figcaption class="up">USA, 2021</figcaption>
+                </figure>
 
-                <div class="image-item">
+                <figure>
                     <img src="images/Wyoming.png" alt="mountains sky trees lake">
-                    <p class="white">Wyoming, 2021</p>
-                </div>
+                    <figcaption class="white up">Wyoming, 2021</figcaption>
+                </figure>
             </div>
         </section>
 
@@ -107,20 +108,24 @@
         <p>Please fill out this form and I'll connect with you soon.</p>
 
         <div>
-            <form action="#" name="Your contact information">
-                <label for="name">Name</label>
-                <input type="text" name="name" id="name" placeholder="Your full name">
+            <fieldset>
+                <legend>Your Contact information</legend>
+                <form action="#">
+                    <label for="name">Name</label>
+                    <input type="text" name="name" id="name" placeholder="Your full name">
 
-                <label for="email">Email</label>
-                <input type="email" name="email" id="email" placeholder="Enter your email address">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" placeholder="Enter your email address">
 
-                <label for="message">Message</label>
-                <input type="text" name="message" id="message" placeholder="What can I help you with?">
+                    <label for="message">Message</label>
+                    <input type="text" name="message" id="message" placeholder="What can I help you with?">
 
-                <div class="container">
-                    <input type="submit" id="submit" value="Submit">
-                </div>
-            </form>
+                    <div class="container">
+                        <input type="submit" id="submit" value="Submit">
+                    </div>
+                </form>
+            </fieldset>
+
         </div>
     </section>
 
