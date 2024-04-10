@@ -5,7 +5,7 @@
     --font-family: Arial, Helvetica, sans-serif;
 }
 
-p {font-size: 1.25em;}
+p {font-size: 1.25em; margin: 0px; padding: 20px;}
 figcaption, label, input, small {font-size: 1em;}
 nav a {font-size: 1.5em;}
 h1 {font-size: 3em;}
@@ -26,9 +26,8 @@ body {
 }
 
 main {  
-    padding: 10px;
+    padding: 0px;
     margin: 0px;
-    background-color: var(--white);
 }
 
 h1 {
@@ -46,13 +45,18 @@ h2 {
 nav {
     display: flex;
     background-color: var(--black);
-    justify-content: center;
+    justify-content: center;;
 }
 
 nav h2 {
     visibility: hidden;
     height: 0px;
     width: 0px;
+}
+
+h2 {
+    margin: 0px;
+    padding: 0px;
 }
 
 nav li {
@@ -88,6 +92,11 @@ a:hover {
 
 h2 {
     text-transform: uppercase;
+}
+
+#about, #gallery {
+    background-color: var(--white);
+    padding-top: 10px;
 }
 
 #gallery-items {
